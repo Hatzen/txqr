@@ -27,17 +27,26 @@ func createGifLargerAndSlower(data []byte) []byte {
 
 // jni interface for string data
 
-func createGifSmallAndFast(data string) []byte {
+// Encoder represents protocol encoder.
+type GifCreator struct {
+}
+
+// NewDecoder creates and inits a new decoder.
+func NewGifCreator() *GifCreator {
+	return &GifCreator{}
+}
+
+func (g *GifCreator) CreateGifSmallAndFast(data string) []byte {
 	result, _ := createAnimatedGif(data, 300, 5, 100, qr.Medium)
 	return result
 }
 
-func createGif(data string) []byte {
+func (g *GifCreator) CreateGif(data string) []byte {
 	result, _ := createAnimatedGif(data, 700, 2, 500, qr.Medium)
 	return result
 }
 
-func createGifLargerAndSlower(data string) []byte {
+func (g *GifCreator) CreateGifLargerAndSlower(data string) []byte {
 	result, _ := createAnimatedGif(data, 1000, 1, 1000, qr.Medium)
 	return result
 }

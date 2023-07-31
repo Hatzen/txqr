@@ -8,6 +8,21 @@ See related blog posts for more details:
  - [Animated QR data transfer with Gomobile and Gopherjs](https://Hatzen.github.io/posts/animatedqr/)
  - [Fountain codes and animated QR](https://Hatzen.github.io/posts/fountaincodes/)
 
+# Setup for android 
+
+go get golang.org/x/mobile/cmd/gomobile
+go install golang.org/x/mobile/cmd/gomobile
+
+C:\Users\*\AppData\Local\Android\Sdk
+
+
+adjusted to generate qrcodes
+txqr/cmd/txqr-gif
+
+
+build aar:
+gomobile bind -target android/arm64,android/amd64
+
 # Demo
 
 ![Demo](./docs/demo.gif)
