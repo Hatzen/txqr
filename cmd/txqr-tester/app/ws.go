@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/divan/txqr/cmd/txqr-tester/ws"
+	"github.com/Hatzen/txqr/cmd/txqr-tester/ws"
 	"github.com/gopherjs/websocket"
 )
 
@@ -15,7 +15,7 @@ type WSClient struct {
 	address string
 	conn    net.Conn
 
-	app *App // TODO(divan): figure out how can we avoid circular dependency
+	app *App // TODO(Hatzen): figure out how can we avoid circular dependency
 }
 
 func NewWSClient(address string, app *App) *WSClient {

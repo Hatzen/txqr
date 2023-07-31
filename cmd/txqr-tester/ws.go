@@ -54,7 +54,7 @@ func (ws *WSBridge) handleFirstClient() {
 			break
 		}
 		if ws.second == nil {
-			// TODO(divan): send not ready?
+			// TODO(Hatzen): send not ready?
 			log.Println("Second client is not ready, skipping...")
 			continue
 		}
@@ -74,7 +74,7 @@ func (ws *WSBridge) handleSecondClient() {
 			break
 		}
 		if ws.first == nil {
-			// TODO(divan): send not ready?
+			// TODO(Hatzen): send not ready?
 			log.Println("First client is not ready, skipping...")
 			continue
 		}

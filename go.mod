@@ -1,4 +1,4 @@
-module github.com/divan/txqr
+module github.com/Hatzen/txqr
 
 require (
 	github.com/elazarl/go-bindata-assetfs v1.0.0

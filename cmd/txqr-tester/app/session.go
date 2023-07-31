@@ -1,6 +1,6 @@
 package main
 
-import "github.com/divan/txqr/qr"
+import "github.com/Hatzen/txqr/qr"
 
 // SessionState defines test session state.
 type SessionState int

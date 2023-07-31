@@ -1,7 +1,7 @@
 # TxQR tester app
 
 App for automating testing different TxQR encoder parameters and measuring
-time to transfer to real smartphone device using [txqr-tester-ios](https://github.com/divan/txqr-tester-ios).
+time to transfer to real smartphone device using [txqr-tester-ios](https://github.com/Hatzen/txqr-tester-ios).
 
 # Design
 ![design](./docs/txqr_tester_design.png)

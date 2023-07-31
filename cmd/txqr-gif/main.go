@@ -11,8 +11,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/divan/txqr"
-	"github.com/divan/txqr/qr"
+	"github.com/Hatzen/txqr"
+	"github.com/Hatzen/txqr/qr"
 )
 
 func main() {

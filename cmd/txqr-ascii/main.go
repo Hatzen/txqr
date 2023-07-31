@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/divan/txqr"
+	"github.com/Hatzen/txqr"
 	"github.com/mdp/qrterminal"
 	"github.com/pyk/byten"
 )
@@ -65,7 +65,7 @@ func main() {
 	}
 }
 
-// TODO(divan): replace with crossplatform version
+// TODO(Hatzen): replace with crossplatform version
 func clearScreen() {
 	print("\033[H\033[2J")
 }

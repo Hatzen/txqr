@@ -7,7 +7,7 @@ It allows you to specify chunk size (`-split`, bytes per QR), and delay between 
 ### Installation
 
 ```
-go get github.com/divan/txqr/cmd/txqr-ascii
+go get github.com/Hatzen/txqr/cmd/txqr-ascii
 
 ```
 

@@ -7,8 +7,8 @@ import (
 	"image"
 	"image/gif"
 
-	"github.com/divan/txqr"
-	"github.com/divan/txqr/qr"
+	"github.com/Hatzen/txqr"
+	"github.com/Hatzen/txqr/qr"
 )
 
 func AnimatedGif(data []byte, imgSize int, setup *testSetup) ([]byte, error) {

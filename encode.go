@@ -35,7 +35,7 @@ func (e *Encoder) Encode(str string) ([]string, error) {
 	idsToEncode := ids(int(float64(numChunks) * e.redundancyFactor))
 	lubyBlocks := fountain.EncodeLTBlocks(msg, idsToEncode, codec)
 
-	// TODO(divan): use sync.Pool as this probably will be used many times
+	// TODO(Hatzen): use sync.Pool as this probably will be used many times
 	ret := make([]string, len(lubyBlocks))
 	for i, block := range lubyBlocks {
 		ret[i] = e.frame(block.BlockCode, len(str), block.Data)

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/divan/txqr/qr"
+	"github.com/Hatzen/txqr/qr"
 	"github.com/gopherjs/vecty"
 	"github.com/gopherjs/vecty/elem"
 )
@@ -104,7 +104,7 @@ func (a *App) mainQR() vecty.ComponentOrHTML {
 func renderQR(text string) vecty.ComponentOrHTML {
 	img, err := qr.Encode(text, 500, qr.Medium)
 	if err != nil {
-		// TODO(divan): display the error nicely (why this can even happen?)
+		// TODO(Hatzen): display the error nicely (why this can even happen?)
 		return elem.Div(vecty.Text(fmt.Sprintf("qr error: %v", err)))
 	}
 	return renderPNG(img)

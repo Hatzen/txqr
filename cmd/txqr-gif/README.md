@@ -7,7 +7,7 @@ It allows you to specify chunk size (`-split`, bytes per QR), output image size 
 ### Installation
 
 ```
-go get github.com/divan/txqr/cmd/txqr-gif
+go get github.com/Hatzen/txqr/cmd/txqr-gif
 
 ```
 

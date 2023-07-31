@@ -18,7 +18,7 @@ func renderPNG(img image.Image) vecty.ComponentOrHTML {
 	var buf bytes.Buffer
 	err := png.Encode(&buf, img)
 	if err != nil {
-		// TODO(divan): display the error nicely (why this can even happen?)
+		// TODO(Hatzen): display the error nicely (why this can even happen?)
 		return elem.Div(vecty.Text(fmt.Sprintf("png error: %v", err)))
 	}
 	src := base64.StdEncoding.EncodeToString(buf.Bytes())
