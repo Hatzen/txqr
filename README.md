@@ -21,7 +21,7 @@ txqr/cmd/txqr-gif
 
 
 build aar:
-gomobile bind -target android/arm64,android/amd64
+gomobile bind -target android
 
 # Demo
 
